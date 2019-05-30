@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste - API Vagalume</title>
+	<meta charset="utf-8">
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/buscar.js"></script>
+	<script src="js/acoes_janela_modal_letras.js"></script>
+	<script src="js/acoes_janela_modal_artistas.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/geral.css">
+	<link rel="stylesheet" type="text/css" href="css/container1.css">
+	<link rel="stylesheet" type="text/css" href="css/container2.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+	<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			$("#form-pesquisa").submit(function(){
+				buscar_artistas($("#txt_pesquisa").val(), 0);
+				buscar_letras($("#txt_pesquisa").val());
+				return false;
+			});
+
+			$("#btn_buscar").click(function(){
+				$("#form-pesquisa").submit();
+			});
+		});
+	</script>
+</head>
+<body>
+	
+	
+	<div class="window" id="janela">
+		
+		<a href="#" class="fechar"><img src="imgs/exit_green.png" alt="sair"></a>
+
+		<div class="conteudo-modal">
+			<!--Aqui ficara todo o conteudo das letras e lista de musicas dos artistas-->
+		</div>
+	</div>
+	<div id="mascara">
+		
+	</div>
+
+	<div class="container1">
+		<div class="logo-vagalume">
+			<a href="https://www.vagalume.com.br"><img alt="vagalume" src="imgs/vgl-logo.svg"></a>
+		</div>
+
+		<div class="campo-pesquisa">
+			<form id="form-pesquisa">
+				<input placeholder="Buscar artistas ou músicas" type="text" name="txt_pesquisa" id="txt_pesquisa">
+				<button id="btn_buscar"><img src="imgs/icon_search1.png"></button>
+			</form>
+		</div>
+	</div>
+
+	<div class="container2">
+
+		<fieldset id="fs-artista">
+			<legend id="l-artista">Artistas</legend>
+			<div class="artistas">
+				<!--O método mostrar_artistas acrescentará a div res-artistas para cada artista encontrado na busca
+				<div class='res-artistas'>
+					<a href=''>
+						<img alt='' src=''></img>
+						<div class='nbanda'></div>
+					</a>
+				</div> -->
+			</div>
+		</fieldset>
+		
+
+		<fieldset id="fs-letras">
+			<legend id="l-letras">Letras</legend>
+			<div class="letras">
+				<!--O método mostrar_letras_art_mus acrescentará a div res-letras para cada letra encontrada
+				<div class='res-letras'>
+					<a href=''>
+						<img alt='' src=''></img>
+						<div class='nbanda'></div>
+						<div class='nletra'></div>
+					</a>
+				</div> -->
+			</div>
+		</fieldset>
+
+	</div>
+
+	<div id="footer">
+		<label>Copyright © Vagalume Mídia Ltda</label>
+	</div>
+</body>
+</html>

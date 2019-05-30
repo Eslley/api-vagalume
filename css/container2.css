@@ -1,0 +1,74 @@
+@media (max-width: 770px){
+	.container2 {
+		margin-top: 120px;
+	}
+}
+
+@media (min-width: 770px){
+	.container2 {
+		margin-top: 60px;
+	}
+}
+
+.container2 {
+	padding-top: 4%;
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 5%;
+	margin-bottom: 2%;
+}
+
+.container2 a {
+	text-decoration: none;
+}
+
+.artistas, .letras {
+	padding: 20px;
+	font-size: 22px;
+	height: auto;
+	overflow: hidden;
+}
+
+.res-artistas, .res-letras{
+	margin: 25px;
+}
+
+.res-artistas img, .res-letras img {
+	width: 100%;
+	border-radius: 30px;
+}
+
+.res-artistas img[alt="not"], .res-letras img[alt="not"] {
+	height: 115.810px;
+	width: 180px;
+}
+
+.res-artistas, .res-letras {
+	overflow-wrap: break-word;
+	width: 180px;
+	height: 173.810px;
+	float: left;
+}
+
+.nbanda {
+	color: #9DD72D;
+}
+
+.nletra {
+	color: gray;
+}
+
+.nbanda, .nletra {
+	text-align: center;
+}
+
+#fs-artista, #fs-letras {
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-left: 13%;
+}
+
+#l-artista, #l-letras {
+	font-size: 32px;
+}

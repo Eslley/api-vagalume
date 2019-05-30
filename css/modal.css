@@ -1,0 +1,68 @@
+.window {
+	display: none;
+	position: fixed;
+	left: 15%;
+	top: 10%;
+	width: 70%;
+	height: 86%;
+	z-index: 2;
+	background-color: rgba(225, 230, 255);
+	overflow-y: scroll;
+}
+
+.conteudo-modal {	
+	width: 100%;
+	padding-left: 10%;
+}
+
+#art-name {
+	font-size: 26px;
+	color: #9DD72D;
+}
+
+#mus-name {
+	font-size: 22px;
+	color: gray;
+}
+
+.conteudo-modal pre, .conteudo-modal a {
+	font-size: 20px;
+
+}
+
+.conteudo-modal a {
+	text-decoration: none;
+	color: black;
+}
+
+.translate {
+	border-radius: 9px;
+	background-color: #9DD72D;;
+	font-size: 18px;
+	outline: none;
+}
+
+.translate:hover {
+	transform: scale(0.9);
+	transition: 1s;
+}
+
+#mascara {
+	display: none;
+	position: fixed;
+	top: 10%;
+	width: 100%;
+	height: 86%;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.fechar {
+	float: right;
+}
+
+.voltar {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
